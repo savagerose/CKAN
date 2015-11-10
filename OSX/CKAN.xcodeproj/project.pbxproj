@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100DDB2B1BEA5A8200628049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100DDB2A1BEA5A8200628049 /* AppDelegate.swift */; };
+		100DDB2D1BEA5A8200628049 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100DDB2C1BEA5A8200628049 /* ViewController.swift */; };
+		100DDB2F1BEA5A8200628049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100DDB2E1BEA5A8200628049 /* Assets.xcassets */; };
+		100DDB321BEA5A8200628049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100DDB301BEA5A8200628049 /* Main.storyboard */; };
+		100DDB3D1BEA5A8200628049 /* CKANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100DDB3C1BEA5A8200628049 /* CKANTests.swift */; };
+		100DDB481BEA5A8200628049 /* CKANUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100DDB471BEA5A8200628049 /* CKANUITests.swift */; };
+		108BC0591BEFB8E8003BF380 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 108BC0581BEFB8E8003BF380 /* Credits.rtf */; };
+		1097986C1BEED20300AD35B4 /* CkanModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097986B1BEED20300AD35B4 /* CkanModule.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		100DDB391BEA5A8200628049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 100DDB1F1BEA5A8200628049 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 100DDB261BEA5A8200628049;
+			remoteInfo = CKAN;
+		};
+		100DDB441BEA5A8200628049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 100DDB1F1BEA5A8200628049 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 100DDB261BEA5A8200628049;
+			remoteInfo = CKAN;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		100DDB271BEA5A8200628049 /* CKAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CKAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		100DDB2A1BEA5A8200628049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		100DDB2C1BEA5A8200628049 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		100DDB2E1BEA5A8200628049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		100DDB311BEA5A8200628049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		100DDB331BEA5A8200628049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		100DDB381BEA5A8200628049 /* CKANTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKANTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		100DDB3C1BEA5A8200628049 /* CKANTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKANTests.swift; sourceTree = "<group>"; };
+		100DDB3E1BEA5A8200628049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		100DDB431BEA5A8200628049 /* CKANUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKANUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		100DDB471BEA5A8200628049 /* CKANUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKANUITests.swift; sourceTree = "<group>"; };
+		100DDB491BEA5A8200628049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		100DDB561BEA62B300628049 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		108BC0581BEFB8E8003BF380 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		1097986B1BEED20300AD35B4 /* CkanModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CkanModule.swift; sourceTree = "<group>"; };
+		10B1ABC31BED3F3200B841D7 /* CKAN-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CKAN-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		100DDB241BEA5A8200628049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100DDB351BEA5A8200628049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100DDB401BEA5A8200628049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100DDB1E1BEA5A8200628049 = {
+			isa = PBXGroup;
+			children = (
+				108BC0581BEFB8E8003BF380 /* Credits.rtf */,
+				10B1ABC31BED3F3200B841D7 /* CKAN-Bridging-Header.h */,
+				100DDB291BEA5A8200628049 /* CKAN */,
+				100DDB3B1BEA5A8200628049 /* CKANTests */,
+				100DDB461BEA5A8200628049 /* CKANUITests */,
+				100DDB281BEA5A8200628049 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		100DDB281BEA5A8200628049 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				100DDB271BEA5A8200628049 /* CKAN.app */,
+				100DDB381BEA5A8200628049 /* CKANTests.xctest */,
+				100DDB431BEA5A8200628049 /* CKANUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		100DDB291BEA5A8200628049 /* CKAN */ = {
+			isa = PBXGroup;
+			children = (
+				100DDB2A1BEA5A8200628049 /* AppDelegate.swift */,
+				100DDB2C1BEA5A8200628049 /* ViewController.swift */,
+				100DDB2E1BEA5A8200628049 /* Assets.xcassets */,
+				100DDB301BEA5A8200628049 /* Main.storyboard */,
+				100DDB331BEA5A8200628049 /* Info.plist */,
+				1097986B1BEED20300AD35B4 /* CkanModule.swift */,
+			);
+			path = CKAN;
+			sourceTree = "<group>";
+		};
+		100DDB3B1BEA5A8200628049 /* CKANTests */ = {
+			isa = PBXGroup;
+			children = (
+				100DDB3C1BEA5A8200628049 /* CKANTests.swift */,
+				100DDB3E1BEA5A8200628049 /* Info.plist */,
+			);
+			path = CKANTests;
+			sourceTree = "<group>";
+		};
+		100DDB461BEA5A8200628049 /* CKANUITests */ = {
+			isa = PBXGroup;
+			children = (
+				100DDB471BEA5A8200628049 /* CKANUITests.swift */,
+				100DDB491BEA5A8200628049 /* Info.plist */,
+			);
+			path = CKANUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100DDB261BEA5A8200628049 /* CKAN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100DDB4C1BEA5A8200628049 /* Build configuration list for PBXNativeTarget "CKAN" */;
+			buildPhases = (
+				100DDB231BEA5A8200628049 /* Sources */,
+				100DDB241BEA5A8200628049 /* Frameworks */,
+				100DDB251BEA5A8200628049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CKAN;
+			productName = CKAN;
+			productReference = 100DDB271BEA5A8200628049 /* CKAN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		100DDB371BEA5A8200628049 /* CKANTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100DDB4F1BEA5A8200628049 /* Build configuration list for PBXNativeTarget "CKANTests" */;
+			buildPhases = (
+				100DDB341BEA5A8200628049 /* Sources */,
+				100DDB351BEA5A8200628049 /* Frameworks */,
+				100DDB361BEA5A8200628049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				100DDB3A1BEA5A8200628049 /* PBXTargetDependency */,
+			);
+			name = CKANTests;
+			productName = CKANTests;
+			productReference = 100DDB381BEA5A8200628049 /* CKANTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		100DDB421BEA5A8200628049 /* CKANUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100DDB521BEA5A8200628049 /* Build configuration list for PBXNativeTarget "CKANUITests" */;
+			buildPhases = (
+				100DDB3F1BEA5A8200628049 /* Sources */,
+				100DDB401BEA5A8200628049 /* Frameworks */,
+				100DDB411BEA5A8200628049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				100DDB451BEA5A8200628049 /* PBXTargetDependency */,
+			);
+			name = CKANUITests;
+			productName = CKANUITests;
+			productReference = 100DDB431BEA5A8200628049 /* CKANUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		100DDB1F1BEA5A8200628049 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "KSP-CKAN";
+				TargetAttributes = {
+					100DDB261BEA5A8200628049 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					100DDB371BEA5A8200628049 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 100DDB261BEA5A8200628049;
+					};
+					100DDB421BEA5A8200628049 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 100DDB261BEA5A8200628049;
+					};
+				};
+			};
+			buildConfigurationList = 100DDB221BEA5A8200628049 /* Build configuration list for PBXProject "CKAN" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 100DDB1E1BEA5A8200628049;
+			productRefGroup = 100DDB281BEA5A8200628049 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				100DDB261BEA5A8200628049 /* CKAN */,
+				100DDB371BEA5A8200628049 /* CKANTests */,
+				100DDB421BEA5A8200628049 /* CKANUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		100DDB251BEA5A8200628049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100DDB2F1BEA5A8200628049 /* Assets.xcassets in Resources */,
+				108BC0591BEFB8E8003BF380 /* Credits.rtf in Resources */,
+				100DDB321BEA5A8200628049 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100DDB361BEA5A8200628049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100DDB411BEA5A8200628049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		100DDB231BEA5A8200628049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1097986C1BEED20300AD35B4 /* CkanModule.swift in Sources */,
+				100DDB2D1BEA5A8200628049 /* ViewController.swift in Sources */,
+				100DDB2B1BEA5A8200628049 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100DDB341BEA5A8200628049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100DDB3D1BEA5A8200628049 /* CKANTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100DDB3F1BEA5A8200628049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100DDB481BEA5A8200628049 /* CKANUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		100DDB3A1BEA5A8200628049 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 100DDB261BEA5A8200628049 /* CKAN */;
+			targetProxy = 100DDB391BEA5A8200628049 /* PBXContainerItemProxy */;
+		};
+		100DDB451BEA5A8200628049 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 100DDB261BEA5A8200628049 /* CKAN */;
+			targetProxy = 100DDB441BEA5A8200628049 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		100DDB301BEA5A8200628049 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				100DDB311BEA5A8200628049 /* Base */,
+				100DDB561BEA62B300628049 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		100DDB4A1BEA5A8200628049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		100DDB4B1BEA5A8200628049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		100DDB4D1BEA5A8200628049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				"HEADER_SEARCH_PATHS[sdk=macosx*]" = "/usr/local/include/mono-2.0/**";
+				INFOPLIST_FILE = CKAN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KSP-CKAN.CKAN";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[sdk=macosx*]" = "$(PROJECT_DIR)/CKAN-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		100DDB4E1BEA5A8200628049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = "";
+				INFOPLIST_FILE = CKAN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KSP-CKAN.CKAN";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[sdk=macosx*]" = "$(PROJECT_DIR)/CKAN-Bridging-Header.h";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		100DDB501BEA5A8200628049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CKANTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KSP-CKAN.CKANTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CKAN.app/Contents/MacOS/CKAN";
+			};
+			name = Debug;
+		};
+		100DDB511BEA5A8200628049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CKANTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KSP-CKAN.CKANTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CKAN.app/Contents/MacOS/CKAN";
+			};
+			name = Release;
+		};
+		100DDB531BEA5A8200628049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CKANUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KSP-CKAN.CKANUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CKAN;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		100DDB541BEA5A8200628049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CKANUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KSP-CKAN.CKANUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CKAN;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100DDB221BEA5A8200628049 /* Build configuration list for PBXProject "CKAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100DDB4A1BEA5A8200628049 /* Debug */,
+				100DDB4B1BEA5A8200628049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100DDB4C1BEA5A8200628049 /* Build configuration list for PBXNativeTarget "CKAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100DDB4D1BEA5A8200628049 /* Debug */,
+				100DDB4E1BEA5A8200628049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100DDB4F1BEA5A8200628049 /* Build configuration list for PBXNativeTarget "CKANTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100DDB501BEA5A8200628049 /* Debug */,
+				100DDB511BEA5A8200628049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100DDB521BEA5A8200628049 /* Build configuration list for PBXNativeTarget "CKANUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100DDB531BEA5A8200628049 /* Debug */,
+				100DDB541BEA5A8200628049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 100DDB1F1BEA5A8200628049 /* Project object */;
+}
