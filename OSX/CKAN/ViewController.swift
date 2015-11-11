@@ -29,8 +29,44 @@ class ViewController: NSViewController {
 class ManageModsViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
     
     let mods = [
-        CkanModule(identifier: "FAR", name: "Ferram Aerospace Research", description: "Better aero", downloadUrl: NSURL(string: "https://github.com/ferram4/Ferram-Aerospace-Research")!, version: "3.0.15.1", licenses: ["GPL-3.0"], size: 4000, installed: true, update: false, contents: ["file/thing.png", "stuff/mod.txt"], authors: ["ferram4"], externalResources: ExternalResources(repository: NSURL(string: "https://github.com/ferram4/Ferram-Aerospace-Research")!, homepage: nil, bugTracker: nil, kerbalstuff: nil)),
-        CkanModule(identifier: "ModuleManager", name: "Module Manager", description: "Allow for extensibility of Kerbal Space Program by overwriting parts files in-memory", downloadUrl: NSURL(string: "https://github.com/sarbian/ModuleManager")!, version: "2.6.13", licenses: ["CC-SA"], size: 680, installed: true, update: false, contents: ["file/thing.png", "bin/modulemanager.dll"], authors: ["sarbian"], externalResources: ExternalResources(repository: NSURL(string: "https://github.com/sarbian/ModuleManager")!, homepage: nil, bugTracker: nil, kerbalstuff: nil))
+        CkanModule(
+            identifier: "FAR",
+            name: "Ferram Aerospace Research",
+            description: "Better aero",
+            downloadUrl: NSURL(string: "https://github.com/ferram4/Ferram-Aerospace-Research")!,
+            version: "3.0.15.1",
+            licenses: ["GPL-3.0"],
+            size: 4000,
+            installed: false,
+            update: false,
+            contents: ["file/thing.png", "stuff/mod.txt"],
+            status: "Stable",
+            maxKSPVersion: "1.5",
+            authors: ["ferram4"],
+            externalResources: ExternalResources(
+                repository: NSURL(string: "https://github.com/ferram4/Ferram-Aerospace-Research")!,
+                homepage: nil,
+                bugTracker: nil,
+                kerbalstuff: nil)),
+        CkanModule(
+            identifier: "ModuleManager",
+            name: "Module Manager",
+            description: "Allow for extensibility of Kerbal Space Program by overwriting parts files in-memory",
+            downloadUrl: NSURL(string: "https://github.com/sarbian/ModuleManager")!,
+            version: "2.6.13",
+            licenses: ["CC-SA"],
+            size: 680,
+            installed: true,
+            update: false,
+            contents: ["file/thing.png", "bin/modulemanager.dll"],
+            status: "Stable",
+            maxKSPVersion: "1.5",
+            authors: ["sarbian"],
+            externalResources: ExternalResources(
+                repository: NSURL(string: "https://github.com/sarbian/ModuleManager")!,
+                homepage: NSURL(string: "https://github.com/sarbian/ModuleManager"),
+                bugTracker: nil,
+                kerbalstuff: nil))
     ]
     
     @objc func numberOfRowsInTableView(tableView: NSTableView) -> Int {
@@ -52,6 +88,14 @@ class ManageModsViewController: NSViewController, NSTableViewDataSource, NSTable
                     return val.authors?.joinWithSeparator(", ")
                 case "Installed Version":
                     return val.version
+                case "Latest Version":
+                    return val.version
+                case "Max KSP Version":
+                    return val.maxKSPVersion
+                case "Download (KB)":
+                    return "\(val.size)"
+                case "Description":
+                    return val.description
                 default:
                     return nil
             }
@@ -117,7 +161,38 @@ class ModInfoViewController: NSTabViewController {
         }
         
         if let detailsLabel = view.viewWithTag(2) as? NSTextField {
-            detailsLabel.stringValue = "License: \(mod.licenses.joinWithSeparator(", "))"
+            var detailsString = "Version: \(mod.version)\n"
+            
+            if mod.licenses.count > 0 {
+                detailsString += "License: \(mod.licenses.joinWithSeparator(", "))\n"
+            }
+            
+            if let authors = mod.authors {
+                if authors.count > 0 {
+                    detailsString += "Author: \(authors.joinWithSeparator(", "))\n"
+                }
+            }
+            
+            if let homePage = mod.externalResources?.homepage {
+                detailsString += "Home Page: \(homePage)\n"
+            }
+            
+            if let repo = mod.externalResources?.repository {
+                detailsString += "GitHub: \(repo)\n"
+            }
+            
+            if let bugTracker = mod.externalResources?.bugTracker {
+                detailsString += "Bug Tracker: \(bugTracker)\n"
+            }
+            
+            if let kerbalStuff = mod.externalResources?.kerbalstuff {
+                detailsString += "KerbalStuff: \(kerbalStuff)\n"
+            }
+            
+            detailsString += "Release Status: \(mod.status)\nMaxVersion: \(mod.maxKSPVersion)\nIdentifier: \(mod.identifier)"
+            
+            detailsLabel.stringValue = detailsString
+            detailsLabel.sizeToFit()
         }
     }
     

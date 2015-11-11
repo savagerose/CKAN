@@ -828,25 +828,25 @@ Gw
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="345"/>
                                 <subviews>
                                     <customView id="7IP-kA-TyX">
-                                        <rect key="frame" x="0.0" y="0.0" width="450" height="164"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="450" height="159"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <textField identifier="DescriptionLabel" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="pbG-Qr-Lcm">
-                                                <rect key="frame" x="18" y="99" width="414" height="17"/>
+                                                <rect key="frame" x="18" y="94" width="414" height="17"/>
                                                 <animations/>
-                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="Multiline Label" id="Iad-0N-lYG">
+                                                <textFieldCell key="cell" controlSize="mini" selectable="YES" continuous="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="left" placeholderString="Description" id="Iad-0N-lYG">
                                                     <font key="font" metaFont="system"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
                                             <textField identifier="TitleLabel" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="a7J-Np-I3z">
-                                                <rect key="frame" x="66" y="127" width="318" height="17"/>
+                                                <rect key="frame" x="66" y="122" width="318" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="315" id="65N-Oh-xQP"/>
                                                 </constraints>
                                                 <animations/>
-                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Multiline Label" id="XXN-7T-xh3">
+                                                <textFieldCell key="cell" controlSize="mini" selectable="YES" sendsActionOnEndEditing="YES" alignment="center" placeholderString="Title" id="XXN-7T-xh3">
                                                     <font key="font" metaFont="systemBold"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -865,13 +865,13 @@ Gw
                                         <animations/>
                                     </customView>
                                     <customView id="vgI-U0-dic">
-                                        <rect key="frame" x="0.0" y="174" width="450" height="171"/>
+                                        <rect key="frame" x="0.0" y="169" width="450" height="176"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <textField identifier="DetailsLabel" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZYx-9e-xhc">
-                                                <rect key="frame" x="18" y="134" width="414" height="17"/>
+                                                <rect key="frame" x="18" y="139" width="414" height="17"/>
                                                 <animations/>
-                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="Multiline Label" allowsEditingTextAttributes="YES" id="PxH-lt-gln">
+                                                <textFieldCell key="cell" controlSize="mini" selectable="YES" sendsActionOnEndEditing="YES" alignment="left" placeholderString="Details" allowsEditingTextAttributes="YES" id="PxH-lt-gln">
                                                     <font key="font" metaFont="system"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -988,7 +988,7 @@ Gw
                                                     <rect key="frame" x="1" y="0.0" width="544" height="541"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="vf7-1Z-pXG" viewBased="YES" id="68z-Ud-eRz">
+                                                        <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="vf7-1Z-pXG" viewBased="YES" id="68z-Ud-eRz">
                                                             <rect key="frame" x="0.0" y="0.0" width="544" height="518"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <animations/>

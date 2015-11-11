@@ -19,10 +19,12 @@ class CkanModule {
     var installed: Bool
     var update: Bool
     let contents: [String]
+    let status: String
+    let maxKSPVersion: String
     let authors: [String]?
     let externalResources: ExternalResources?
     
-    init(identifier: String, name: String, description: String, downloadUrl: NSURL, version: String, licenses: [String], size: UInt32, installed: Bool, update: Bool, contents: [String], authors: [String]?, externalResources: ExternalResources?) {
+    init(identifier: String, name: String, description: String, downloadUrl: NSURL, version: String, licenses: [String], size: UInt32, installed: Bool, update: Bool, contents: [String], status: String, maxKSPVersion: String, authors: [String]?, externalResources: ExternalResources?) {
         self.identifier = identifier
         self.name = name
         self.description = description
@@ -33,6 +35,8 @@ class CkanModule {
         self.installed = installed
         self.update = update
         self.contents = contents
+        self.status = status
+        self.maxKSPVersion = maxKSPVersion
         self.authors = authors
         self.externalResources = externalResources
     }
