@@ -26,13 +26,12 @@ class ViewController: NSViewController {
 
 }
 
-class ManageModsViewController: NSViewController, NSTableViewDataSource {
+class ManageModsViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
     
-    override func viewDidLoad() {
-        
-    }
-    
-    let mods = [ CkanModule(identifier: "FAR", name: "Ferram Aerospace Research", description: "Better aero", downloadUrl: NSURL(string: "https://github.com/ferram4/Ferram-Aerospace-Research")!, version: "3.0.15.1", licenses: ["GPL-3.0"], size: 4000, installed: true, update: false, authors: ["Ferram4"], externalResources: ExternalResources(repository: NSURL(string: "https://github.com/ferram4/Ferram-Aerospace-Research")!, homepage: nil, bugTracker: nil, kerbalstuff: nil)) ]
+    let mods = [
+        CkanModule(identifier: "FAR", name: "Ferram Aerospace Research", description: "Better aero", downloadUrl: NSURL(string: "https://github.com/ferram4/Ferram-Aerospace-Research")!, version: "3.0.15.1", licenses: ["GPL-3.0"], size: 4000, installed: true, update: false, contents: ["file/thing.png", "stuff/mod.txt"], authors: ["ferram4"], externalResources: ExternalResources(repository: NSURL(string: "https://github.com/ferram4/Ferram-Aerospace-Research")!, homepage: nil, bugTracker: nil, kerbalstuff: nil)),
+        CkanModule(identifier: "ModuleManager", name: "Module Manager", description: "Allow for extensibility of Kerbal Space Program by overwriting parts files in-memory", downloadUrl: NSURL(string: "https://github.com/sarbian/ModuleManager")!, version: "2.6.13", licenses: ["CC-SA"], size: 680, installed: true, update: false, contents: ["file/thing.png", "bin/modulemanager.dll"], authors: ["sarbian"], externalResources: ExternalResources(repository: NSURL(string: "https://github.com/sarbian/ModuleManager")!, homepage: nil, bugTracker: nil, kerbalstuff: nil))
+    ]
     
     @objc func numberOfRowsInTableView(tableView: NSTableView) -> Int {
         return mods.count
@@ -76,4 +75,57 @@ class ManageModsViewController: NSViewController, NSTableViewDataSource {
         }
     }
     
+    @objc func tableViewSelectionDidChange(notification: NSNotification) {
+        if let tableView = notification.object as? NSTableView {
+            if tableView.selectedRow >= 0 {
+                let modInfo = mods[tableView.selectedRow]
+                
+                if let modInfoViewController = childViewControllers.first as? ModInfoViewController {
+                    modInfoViewController.setModInfo(modInfo)
+                }
+            }
+        }
+    }
+    
+}
+
+class ModInfoViewController: NSTabViewController {
+    func setModInfo(mod: CkanModule) {
+        childViewControllers.forEach({ viewController in
+            if let id = viewController.title {
+                switch id {
+                    case "Metadata":
+                        setMetadataView(mod, view: viewController.view)
+                    case "Content":
+                        setContentsView(mod, view: viewController.view)
+                    case "Relationships":
+                        setRelationshipsView(mod, view: viewController.view)
+                    default:
+                        return
+                }
+            }
+        })
+    }
+    
+    func setMetadataView(mod: CkanModule, view: NSView) {
+        if let titleLabel = view.viewWithTag(0) as? NSTextField {
+            titleLabel.stringValue = mod.name
+        }
+        
+        if let descriptionLabel = view.viewWithTag(1) as? NSTextField {
+            descriptionLabel.stringValue = mod.description
+        }
+        
+        if let detailsLabel = view.viewWithTag(2) as? NSTextField {
+            detailsLabel.stringValue = "License: \(mod.licenses.joinWithSeparator(", "))"
+        }
+    }
+    
+    func setContentsView(mod: CkanModule, view: NSView) {
+        
+    }
+    
+    func setRelationshipsView(mod: CkanModule, view: NSView) {
+        
+    }
 }

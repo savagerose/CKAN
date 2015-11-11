@@ -18,10 +18,11 @@ class CkanModule {
     let size: UInt32
     var installed: Bool
     var update: Bool
+    let contents: [String]
     let authors: [String]?
     let externalResources: ExternalResources?
     
-    init(identifier: String, name: String, description: String, downloadUrl: NSURL, version: String, licenses: [String], size: UInt32, installed: Bool, update: Bool, authors: [String]?, externalResources: ExternalResources?) {
+    init(identifier: String, name: String, description: String, downloadUrl: NSURL, version: String, licenses: [String], size: UInt32, installed: Bool, update: Bool, contents: [String], authors: [String]?, externalResources: ExternalResources?) {
         self.identifier = identifier
         self.name = name
         self.description = description
@@ -31,6 +32,7 @@ class CkanModule {
         self.size = size
         self.installed = installed
         self.update = update
+        self.contents = contents
         self.authors = authors
         self.externalResources = externalResources
     }
