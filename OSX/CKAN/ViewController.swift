@@ -131,6 +131,11 @@ class ManageModsViewController: NSViewController, NSTableViewDataSource, NSTable
         }
     }
     
+    @IBAction func ApplyClicked(sender: NSButton) {
+        if let parentTabs = parentViewController as? NSTabViewController {
+            parentTabs.selectedTabViewItemIndex = 1
+        }
+    }
 }
 
 class ModInfoViewController: NSTabViewController {
