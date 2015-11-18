@@ -261,7 +261,7 @@
         <!--Updating Repositories-->
         <scene sceneID="T54-YQ-3m0">
             <objects>
-                <viewController title="Updating Repositories" id="8vO-2e-zm3" sceneMemberID="viewController">
+                <viewController title="Updating Repositories" id="8vO-2e-zm3" customClass="UpdatingReposViewController" customModule="CKAN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="fwF-ub-md5">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="290"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -353,7 +353,7 @@ Gw
         <!--Changeset-->
         <scene sceneID="L2K-Pe-twu">
             <objects>
-                <viewController title="Changeset" id="pm9-po-29k" sceneMemberID="viewController">
+                <viewController title="Changeset" id="pm9-po-29k" customClass="ChangesetViewController" customModule="CKAN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="JHH-NC-1Gb">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
