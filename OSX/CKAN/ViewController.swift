@@ -139,11 +139,11 @@ class ModInfoViewController: NSTabViewController {
             if let id = viewController.title {
                 switch id {
                     case "Metadata":
-                        setMetadataView(mod, view: viewController.view)
+                        setMetadataView(mod, viewController: viewController)
                     case "Content":
-                        setContentsView(mod, view: viewController.view)
+                        setContentsView(mod, viewController: viewController)
                     case "Relationships":
-                        setRelationshipsView(mod, view: viewController.view)
+                        setRelationshipsView(mod, viewController: viewController)
                     default:
                         return
                 }
@@ -151,7 +151,9 @@ class ModInfoViewController: NSTabViewController {
         })
     }
     
-    func setMetadataView(mod: CkanModule, view: NSView) {
+    func setMetadataView(mod: CkanModule, viewController: NSViewController) {
+        let view = viewController.view
+        
         if let titleLabel = view.viewWithTag(0) as? NSTextField {
             titleLabel.stringValue = mod.name
         }
@@ -196,11 +198,39 @@ class ModInfoViewController: NSTabViewController {
         }
     }
     
-    func setContentsView(mod: CkanModule, view: NSView) {
+    func setContentsView(mod: CkanModule, viewController: NSViewController) {
+        let outlineView = viewController.view.viewWithTag(1)
         
+        mod.contents.forEach({ fileName in
+            
+        })
     }
     
-    func setRelationshipsView(mod: CkanModule, view: NSView) {
+    func setRelationshipsView(mod: CkanModule, viewController: NSViewController) {
+        let outlineView = viewController.view.viewWithTag(1)
         
+        mod.contents.forEach({ dependency in
+            viewController.view.viewWithTag(1)
+        })
+    }
+}
+
+class ModRelationshipsViewController: NSObject, NSOutlineViewDataSource {
+    var relationshipData: [String] = []
+    
+    func outlineView(outlineView: NSOutlineView, child index: Int, ofItem item: AnyObject?) -> AnyObject {
+        return relationshipData[index]
+    }
+    
+    func outlineView(outlineView: NSOutlineView, numberOfChildrenOfItem item: AnyObject?) -> Int {
+        return relationshipData.count
+    }
+    
+    func outlineView(outlineView: NSOutlineView, isItemExpandable item: AnyObject) -> Bool {
+        return relationshipData.count > 0
+    }
+    
+    func outlineView(outlineView: NSOutlineView, objectValueForTableColumn tableColumn: NSTableColumn?, byItem item: AnyObject?) -> AnyObject? {
+        return relationshipData[0]
     }
 }
