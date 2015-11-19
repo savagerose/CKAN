@@ -83,7 +83,7 @@ class ManageModsViewController: NSViewController, NSTableViewDataSource, NSTable
                 return nil
             }
         }
-        
+    
         return nil
     }
     
@@ -112,6 +112,10 @@ class ManageModsViewController: NSViewController, NSTableViewDataSource, NSTable
                 }
             }
         }
+    }
+    
+    @IBAction func RefreshClicked(sender: NSButton) {
+        
     }
     
     @IBAction func ApplyClicked(sender: NSButton) {

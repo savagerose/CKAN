@@ -13,6 +13,7 @@
 		100DDB321BEA5A8200628049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100DDB301BEA5A8200628049 /* Main.storyboard */; };
 		100DDB3D1BEA5A8200628049 /* CKANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100DDB3C1BEA5A8200628049 /* CKANTests.swift */; };
 		100DDB481BEA5A8200628049 /* CKANUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100DDB471BEA5A8200628049 /* CKANUITests.swift */; };
+		10124FD81BFE6E330063D216 /* ModListSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10124FD71BFE6E330063D216 /* ModListSearch.swift */; };
 		102079391BFD3239006D713F /* ManageModsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102079381BFD3239006D713F /* ManageModsViewController.swift */; };
 		1020793B1BFD3278006D713F /* ModInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1020793A1BFD3278006D713F /* ModInfoViewController.swift */; };
 		1020793D1BFD32F4006D713F /* ChangesetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1020793C1BFD32F4006D713F /* ChangesetViewController.swift */; };
@@ -52,6 +53,7 @@
 		100DDB471BEA5A8200628049 /* CKANUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKANUITests.swift; sourceTree = "<group>"; };
 		100DDB491BEA5A8200628049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		100DDB561BEA62B300628049 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		10124FD71BFE6E330063D216 /* ModListSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModListSearch.swift; sourceTree = "<group>"; };
 		102079381BFD3239006D713F /* ManageModsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageModsViewController.swift; sourceTree = "<group>"; };
 		1020793A1BFD3278006D713F /* ModInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModInfoViewController.swift; sourceTree = "<group>"; };
 		1020793C1BFD32F4006D713F /* ChangesetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangesetViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				1020793A1BFD3278006D713F /* ModInfoViewController.swift */,
 				1020793C1BFD32F4006D713F /* ChangesetViewController.swift */,
 				1020793E1BFD3347006D713F /* UpdatingReposViewController.swift */,
+				10124FD71BFE6E330063D216 /* ModListSearch.swift */,
 			);
 			path = CKAN;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10124FD81BFE6E330063D216 /* ModListSearch.swift in Sources */,
 				102079391BFD3239006D713F /* ManageModsViewController.swift in Sources */,
 				1020793D1BFD32F4006D713F /* ChangesetViewController.swift in Sources */,
 				1097986C1BEED20300AD35B4 /* CkanModule.swift in Sources */,
