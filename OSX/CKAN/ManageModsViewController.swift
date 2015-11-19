@@ -116,7 +116,27 @@ class ManageModsViewController: NSViewController, NSTableViewDataSource, NSTable
     
     @IBAction func ApplyClicked(sender: NSButton) {
         if let parentTabs = parentViewController as? NSTabViewController {
-            parentTabs.selectedTabViewItemIndex = 1
+            if let changesetTab = GetChangesetTab() as? ChangesetViewController {
+                parentTabs.selectedTabViewItemIndex = parentTabs.childViewControllers.indexOf(changesetTab)!
+            }
+        }
+    }
+    
+    func GetChangesetTab() -> NSViewController? {
+        if let parentTabs = parentViewController as? NSTabViewController {
+            return parentTabs.childViewControllers.filter({ viewController in
+                viewController is ChangesetViewController
+            }).first!
+        }
+        
+        return nil
+    }
+    
+    func GoToChangesetTab() {
+        if let parentTabs = parentViewController as? NSTabViewController {
+            if let changesetTab = GetChangesetTab() as? ChangesetViewController {
+                parentTabs.selectedTabViewItemIndex = parentTabs.childViewControllers.indexOf(changesetTab)!
+            }
         }
     }
 }
