@@ -364,7 +364,7 @@ Gw
                                     <rect key="frame" x="1" y="0.0" width="448" height="258"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" tag="1" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="g8q-eK-vkM" viewBased="YES" id="YdC-OD-mE8">
+                                        <tableView focusRingType="none" verticalHuggingPriority="750" tag="1" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="g8q-eK-vkM" viewBased="YES" id="YdC-OD-mE8">
                                             <rect key="frame" x="0.0" y="0.0" width="631" height="235"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
@@ -771,7 +771,7 @@ Gw
                         <rect key="frame" x="0.0" y="0.0" width="866" height="614"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="yHc-h7-g3T">
+                            <button toolTip="Launch Kerbal Space Program" translatesAutoresizingMaskIntoConstraints="NO" id="yHc-h7-g3T">
                                 <rect key="frame" x="0.0" y="582" width="32" height="32"/>
                                 <animations/>
                                 <buttonCell key="cell" type="square" alternateTitle="Launch KSP" bezelStyle="shadowlessSquare" image="ksp" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="D90-Jf-s8S">
@@ -785,13 +785,13 @@ Gw
                                     <constraint firstAttribute="width" constant="182" id="AT9-JO-h3Y"/>
                                 </constraints>
                                 <animations/>
-                                <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Name" usesSingleLineMode="YES" bezelStyle="round" id="c1d-SI-6MS">
+                                <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Name" usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" maximumRecents="100" id="c1d-SI-6MS">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </searchFieldCell>
                             </searchField>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="8bl-HU-fA6">
+                            <button toolTip="Add Available Updates" translatesAutoresizingMaskIntoConstraints="NO" id="8bl-HU-fA6">
                                 <rect key="frame" x="76" y="582" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="pti-w1-oiO"/>
@@ -803,7 +803,7 @@ Gw
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="BY3-cI-wY5">
+                            <button toolTip="Apply Changes" translatesAutoresizingMaskIntoConstraints="NO" id="BY3-cI-wY5">
                                 <rect key="frame" x="114" y="582" width="32" height="32"/>
                                 <animations/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="apply" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fRl-NX-xfj">
@@ -814,7 +814,7 @@ Gw
                                     <action selector="ApplyClicked:" target="aVv-tU-jqn" id="ALV-TA-x9B"/>
                                 </connections>
                             </button>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="QLM-XH-FPT">
+                            <button toolTip="Filter" translatesAutoresizingMaskIntoConstraints="NO" id="QLM-XH-FPT">
                                 <rect key="frame" x="152" y="582" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="8vb-ob-Voh"/>
@@ -826,13 +826,16 @@ Gw
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="sgV-i3-fph">
+                            <button toolTip="Refresh Repositories" translatesAutoresizingMaskIntoConstraints="NO" id="sgV-i3-fph">
                                 <rect key="frame" x="38" y="582" width="32" height="32"/>
                                 <animations/>
                                 <buttonCell key="cell" type="square" alternateTitle="Refresh" bezelStyle="shadowlessSquare" image="refresh" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="HkJ-TB-S4b">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="RefreshClicked:" target="aVv-tU-jqn" id="fTv-gU-7zj"/>
+                                </connections>
                             </button>
                             <splitView arrangesAllSubviews="NO" dividerStyle="paneSplitter" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iwb-Ql-H4W">
                                 <rect key="frame" x="0.0" y="0.0" width="866" height="542"/>
@@ -841,13 +844,17 @@ Gw
                                         <rect key="frame" x="0.0" y="0.0" width="546" height="542"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
+                                            <progressIndicator identifier="mod list daisy" hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="9Bh-TU-2bX">
+                                                <rect key="frame" x="257" y="255" width="32" height="32"/>
+                                                <animations/>
+                                            </progressIndicator>
                                             <scrollView identifier="myTable" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsR-rH-Pg9">
                                                 <rect key="frame" x="0.0" y="0.0" width="546" height="542"/>
                                                 <clipView key="contentView" id="Rph-Qb-BNx">
                                                     <rect key="frame" x="1" y="0.0" width="544" height="541"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="vf7-1Z-pXG" viewBased="YES" id="68z-Ud-eRz">
+                                                        <tableView focusRingType="none" verticalHuggingPriority="750" tag="5" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="vf7-1Z-pXG" viewBased="YES" id="68z-Ud-eRz">
                                                             <rect key="frame" x="0.0" y="0.0" width="544" height="518"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <animations/>
